@@ -4,6 +4,7 @@ import fs from 'node:fs/promises';
 
 const generateContacts = async (number) => {
   const db = await fs.readFile(PATH_DB);
+  //   console.log(db.toString());
 
   for (let i = 0; i < number; i += 1) {
     const contact = {
@@ -12,6 +13,7 @@ const generateContacts = async (number) => {
       email: faker.internet.email(),
       occupation: faker.person.jobTitle(),
     };
+
 
     await fs.appendFile(PATH_DB, Buffer.from(JSON.stringify(contact)));
     // console.log(contact);

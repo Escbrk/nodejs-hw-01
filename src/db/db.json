@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "name": "Mrs. Bobbie Kessler",
+    "phone": "(910) 921-4419 x0028",
+    "email": "Roy_Wiza@yahoo.com",
+    "job": "Lead Identity Assistant"
+  },
+  {
+    "name": "Mrs. Jeanette Bins",
+    "phone": "519.867.2645 x47751",
+    "email": "Jerrell_Nikolaus@hotmail.com",
+    "job": "Direct Interactions Architect"
+  },
+  {
+    "name": "Kurt D'Amore-Runolfsson",
+    "phone": "450-536-6192 x5472",
+    "email": "Laila63@gmail.com",
+    "job": "Direct Accounts Liaison"
+  },
+  {
+    "name": "Dr. Mathew Tremblay",
+    "phone": "(324) 464-1896 x492",
+    "email": "Sierra_Wolf87@gmail.com",
+    "job": "Human Data Representative"
+  },
+  {
+    "name": "Darryl Ebert",
+    "phone": "875.469.5059 x441",
+    "email": "Verna82@hotmail.com",
+    "job": "Future Web Analyst"
+  },
+  {
+    "name": "Kelli Kirlin",
+    "phone": "491-885-0317 x3303",
+    "email": "Dannie.Botsford50@gmail.com",
+    "job": "Chief Group Officer"
+  },
+  {
+    "name": "Grady D'Amore",
+    "phone": "309-743-9158 x87288",
+    "email": "Brock_Macejkovic94@yahoo.com",
+    "job": "Regional Tactics Agent"
+  },
+  {
+    "name": "Dale Rosenbaum",
+    "phone": "1-594-949-0653 x367",
+    "email": "Vena.Koss50@gmail.com",
+    "job": "Chief Research Analyst"
+  }
+]

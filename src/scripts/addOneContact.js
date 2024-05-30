@@ -1,23 +1,19 @@
-import { faker } from '@faker-js/faker';
 import { PATH_DB } from '../constants/contacts.js';
 import fs from 'node:fs/promises';
+import { createFakeContact } from '../utils/createFakeContact.js';
+import { parsedJSON } from '../constants/jsonArray.js';
 
 export const addOneContact = async () => {
-  const db = await fs.readFile(PATH_DB);
-  const parsedJSON = JSON.parse(db);
+  try {
+    parsedJSON.push(createFakeContact());
 
-  const contact = {
-    fullName: faker.person.fullName(),
-    phoneNumber: faker.phone.number(),
-    email: faker.internet.email(),
-    occupation: faker.person.jobTitle(),
-  };
-  parsedJSON.push(contact);
-
-  return await fs.writeFile(
-    PATH_DB,
-    Buffer.from(JSON.stringify(parsedJSON, null, 2)),
-  );
+    return await fs.writeFile(
+      PATH_DB,
+      Buffer.from(JSON.stringify(parsedJSON, null, 2)),
+    );
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 await addOneContact();

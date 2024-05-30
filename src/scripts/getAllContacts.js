@@ -1,9 +1,15 @@
-import { PATH_DB } from '../constants/contacts.js';
-import fs from 'node:fs/promises';
+import { dbArray, parsedJSON } from '../constants/jsonArray.js';
 
 export const getAllContacts = async () => {
-  const db = await fs.readFile(PATH_DB);
-  return JSON.parse(db);
+  try {
+    if (parsedJSON.length !== 0) {
+      return JSON.parse(dbArray);
+    } else {
+      console.log('Nothing found!');
+    }
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 console.log(await getAllContacts());

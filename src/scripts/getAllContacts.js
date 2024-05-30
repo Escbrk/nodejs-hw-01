@@ -5,7 +5,7 @@ export const getAllContacts = async () => {
     if (parsedJSON.length !== 0) {
       return JSON.parse(dbArray);
     } else {
-      console.log('Nothing found!');
+      return 'Nothing found!';
     }
   } catch (error) {
     console.log(error);
